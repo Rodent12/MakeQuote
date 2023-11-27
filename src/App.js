@@ -20,10 +20,14 @@ function App() {
   }
 
   return (
-    <div className="App">
-      {fetchQuote()}
-      <div className='quote'>
-        {quote}
+    <div>
+      <div className="App">
+        {fetchQuote()}
+        <div className='quote'>
+          {quote}
+          <div><button className='btn' onClick={fetchQuote}>Give me a quote</button></div>
+        </div>
+        
       </div>
     </div>
   );
